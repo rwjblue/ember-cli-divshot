@@ -17,7 +17,7 @@ npm install --save-dev ember-cli-divshot
 From within your Ember CLI application run:
 
 ```bash
-ember divshot init
+ember generage divshot
 ```
 
 ### Deploy
