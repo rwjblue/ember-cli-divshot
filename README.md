@@ -1,25 +1,35 @@
 # Ember-cli-divshot
 
-This README outlines the details of collaborating on this Ember addon.
+Simple wrapper for the `divshot-cli` package.  Allows usage of divshot deployment from an ember-cli app with ease.
 
-## Installation
+## Usage
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+### Installation
 
-## Running
+From within your Ember CLI application run:
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+```bash
+npm install --save-dev ember-cli-divshot
+```
+
+### Setting up Divshot
+
+From within your Ember CLI application run:
+
+```bash
+ember divshot init
+```
+
+### Deploy
+
+```bash
+ember divshot push
+```
 
 ## Running Tests
 
-* `ember test`
-* `ember test --server`
+* `npm test`
 
-## Building
+## License
 
-* `ember build`
-
-For more information on using ember-cli, visit [http://iamstef.net/ember-cli/](http://iamstef.net/ember-cli/).
+MIT
