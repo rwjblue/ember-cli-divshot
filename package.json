@@ -1,5 +1,5 @@
 {
-  "name": "dummy",
+  "name": "ember-cli-divshot",
   "version": "0.0.0",
   "private": true,
   "directories": {
@@ -26,5 +26,9 @@
     "ember-cli": "0.0.40",
     "express": "^4.1.1",
     "glob": "^3.2.9"
+  },
+  "dependencies": {
+    "divshot-cli": "~0.15.7",
+    "rsvp": "~3.0.9"
   }
 }
