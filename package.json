@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-divshot",
-  "version": "0.1.1+pre",
+  "version": "0.1.1",
   "directories": {
     "doc": "doc",
     "test": "test"
