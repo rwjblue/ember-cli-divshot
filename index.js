@@ -1,3 +1,5 @@
+var path = require('path');
+
 module.exports = {
   name: 'ember-cli-divshot',
 
@@ -5,5 +7,9 @@ module.exports = {
     return {
       'divshot': require('./lib/commands/divshot')
     }
+  },
+
+  blueprintsPath: function() {
+    return path.join(__dirname, 'blueprints');
   }
 }
