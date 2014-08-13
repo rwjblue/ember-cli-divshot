@@ -10,7 +10,7 @@
     "build": "ember build",
     "test": "node tests/runner.js"
   },
-  "repository": "https://github.com/stefanpenner/ember-cli",
+  "repository": "https://github.com/rwjblue/ember-cli-divshot",
   "engines": {
     "node": ">= 0.10.0"
   },
