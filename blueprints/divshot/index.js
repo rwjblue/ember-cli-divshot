@@ -1,3 +1,6 @@
+var fs = require('fs');
+var path = require('path');
+
 // implementation from https://github.com/stefanpenner/ember-cli/pull/1857
 //
 // remove this inline once 0.0.43 is shipped
@@ -32,12 +35,7 @@ function insertIntoFile(pathRelativeToProjectRoot, contentsToInsert, providedOpt
   if (contentsToWrite !== originalContents) {
     returnValue.inserted = true;
 
-    return writeFile(fullPath, contentsToWrite)
-      .then(function() {
-        return returnValue;
-      });
-  } else {
-    return Promise.resolve(returnValue);
+    return fs.writeFileSync(fullPath, contentsToWrite, { encoding: 'utf8' });
   }
 };
 
