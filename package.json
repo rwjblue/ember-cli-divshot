@@ -20,11 +20,13 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "ember-cli": "0.0.40",
+    "abbrev": "^1.0.5",
     "broccoli-ember-hbs-template-compiler": "^1.5.0",
     "chai": "~1.9.1",
-    "mocha-jshint": "0.0.9",
-    "glob": "~4.0.5"
+    "ember-cli": "^0.0.46",
+    "glob": "~4.0.5",
+    "mocha": "^1.21.4",
+    "mocha-jshint": "^0.0.9"
   },
   "dependencies": {
     "divshot-cli": "~0.15.7",

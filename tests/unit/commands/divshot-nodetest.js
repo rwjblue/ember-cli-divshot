@@ -17,6 +17,7 @@ describe('divshot command', function() {
   var fakeSpawn;
   var CommandUnderTest;
   var buildTaskCalled;
+  var buildTaskReceivedProject;
 
   before(function() {
     CommandUnderTest = Command.extend(DivshotCommandBase);
@@ -30,6 +31,7 @@ describe('divshot command', function() {
       Build: Task.extend({
         run: function() {
           buildTaskCalled = true;
+          buildTaskReceivedProject = !!this.project;
 
           return RSVP.resolve();
         }
@@ -65,7 +67,10 @@ describe('divshot command', function() {
       environment: { },
       tasks: tasks,
       runCommand: function(command, args) {
-        assert(buildTaskCalled);
+        assert(buildTaskCalled,
+            'expected build task to be called');
+        assert(buildTaskReceivedProject,
+            'expected build task to receive project');
       }
     }).validateAndRun(['push']);
   });
