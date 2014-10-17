@@ -26,7 +26,9 @@ ember generate divshot
 ember divshot push
 ```
 
-## Running Tests
+## Contributing
+
+### Running Tests
 
 * `npm test`
 
