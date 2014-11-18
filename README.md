@@ -26,6 +26,24 @@ ember generate divshot
 ember divshot push
 ```
 
+If you'd like to deploy the production build of your app you can specify it with the `environment` option:
+
+```bash
+ember divshot push --environment=production
+```
+
+You can also push to divshot staging directly:
+
+```bash
+ember divshot push staging
+```
+
+Or production:
+
+```bash
+ember divshot push production
+```
+
 ## Contributing
 
 ### Running Tests
