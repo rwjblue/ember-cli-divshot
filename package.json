@@ -29,7 +29,7 @@
     "mocha-jshint": "^0.0.9"
   },
   "dependencies": {
-    "divshot-cli": "~0.15.7",
+    "divshot-cli": "1.x.x",
     "rsvp": "~3.0.9"
   }
 }
