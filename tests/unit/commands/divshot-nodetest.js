@@ -59,6 +59,20 @@ describe('divshot command', function() {
     }).validateAndRun(['push']);
   });
 
+  it('accecpt `divshot` option arguments', function() {
+    return new CommandUnderTest({
+      ui: ui,
+      analytics: analytics,
+      project: project,
+      environment: { },
+      tasks: tasks,
+      runCommand: function(command, args) {
+        assert.include(command, 'divshot-cli/bin/divshot.js');
+        assert.deepEqual(args, ['push', '--token', '123']);
+      }
+    }).validateAndRun(['push', 'token=123']);
+  });
+
   it('runs build before running the command', function() {
     return new CommandUnderTest({
       ui: ui,
