@@ -1,5 +1,9 @@
 ### Master
 
+### 0.1.7
+
+* Add support to pass through `--token`, `--app`, and other options to the underlying `divshot` commands.
+
 ### 0.1.6
 
 * Default the Ember build environment to `production`, allow `--environment=development` to be specified.
