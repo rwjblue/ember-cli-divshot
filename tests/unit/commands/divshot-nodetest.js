@@ -52,6 +52,7 @@ describe('divshot command', function() {
       project: project,
       environment: { },
       tasks: tasks,
+      settings: {},
       runCommand: function(command, args) {
         assert.include(command, 'divshot-cli/bin/divshot.js');
         assert.deepEqual(args, ['push']);
@@ -66,11 +67,12 @@ describe('divshot command', function() {
       project: project,
       environment: { },
       tasks: tasks,
+      settings: {},
       runCommand: function(command, args) {
         assert.include(command, 'divshot-cli/bin/divshot.js');
-        assert.deepEqual(args, ['push', '--token', '123']);
+        assert.deepEqual(args, ['push', '--token', '1234']);
       }
-    }).validateAndRun(['push', 'token=123']);
+    }).validateAndRun(['push', '--token', '1234']);
   });
 
   it('runs build before running the command', function() {
@@ -80,6 +82,7 @@ describe('divshot command', function() {
       project: project,
       environment: { },
       tasks: tasks,
+      settings: {},
       runCommand: function(command, args) {
         assert(buildTaskCalled,
             'expected build task to be called');
