@@ -59,7 +59,7 @@ describe('divshot command', function() {
     }).validateAndRun(['push']);
   });
 
-  it('accecpt `divshot` option arguments', function() {
+  it('accecpts `divshot` option arguments', function() {
     return new CommandUnderTest({
       ui: ui,
       analytics: analytics,

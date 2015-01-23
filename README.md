@@ -47,7 +47,7 @@ Or production:
 ember divshot push production
 ```
 
-#### Specifying the Divshot option arguemnts (useful if using option arguemnt such as --token)
+#### Specifying the Divshot option arguments (useful if using option arguments such as --token)
 
 ```bash
 ember divshot push production token=OAUTH_TOKEN
