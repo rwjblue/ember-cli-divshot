@@ -11,5 +11,11 @@ module.exports = {
 
   blueprintsPath: function() {
     return path.join(__dirname, 'blueprints');
+  },
+
+  contentFor: function(type, config) {
+    if (type === 'body' && config.environment === 'production') {
+      return '<script src="/__/env.js"></script>';
+    }
   }
 }
