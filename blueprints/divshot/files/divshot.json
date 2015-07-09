@@ -5,5 +5,8 @@
     "/tests": "tests/index.html",
     "/tests/**": "tests/index.html",
     "/**": "index.html"
+  },
+  "cache_control": {
+    "/assets/**": 31536000
   }
 }
