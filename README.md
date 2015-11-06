@@ -2,6 +2,12 @@
 
 Simple wrapper for the `divshot-cli` package.  Allows usage of divshot deployment from an ember-cli app with ease.
 
+## DEPRECATED
+
+Divshot has joined the Firebase team, and the existing `divshot` package and deployment system will be going away soonish.  Due to this change, ember-cli-divshot is deprecated.
+
+See https://www.firebase.com/blog/2015-10-13-divshot-joins-firebase.html for more details.
+
 ## Usage
 
 ### Installation
