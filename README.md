@@ -26,6 +26,14 @@ From within your Ember CLI application run:
 ember generate divshot
 ```
 
+### Login to Divshot
+
+From within your Ember CLI application run:
+
+```bash
+ember divshot login
+```
+
 ### Deploy
 
 ```bash
